@@ -11,7 +11,7 @@
 
 .nav {
   .nav__item {
-    font-family: "Roboto", sans-serif;
+    font-family: $main;
     font-size: 14px;
     font-weight: 500;
     color: #000;
@@ -32,10 +32,10 @@
 }
 
 .nav__item {
-  color: var(--accent-color);
+  color: $primary;
 
   &--active {
-    color: var(--background);
+    color: $dark;
     position: relative;
     padding-bottom: 24px;
     transition: color 250ms ease;

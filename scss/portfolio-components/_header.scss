@@ -32,10 +32,10 @@
   }
   
   .nav__item {
-    color: var(--accent-color);
+    color: $primary;
   
     &--active {
-      color: var(--background);
+      color: $dark;
       position: relative;
       padding-bottom: 24px;
       transition: color 250ms ease;
