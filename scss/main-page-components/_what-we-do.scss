@@ -1,0 +1,43 @@
+.what-we-do__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 116%;
+  color: #000;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.what-we-do__wrap {
+  padding: 50px 0 94px 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.what-we-do__thumb {
+  position: relative;
+}
+
+.what-we-do__img {
+  max-width: 100%;
+  display: block;
+}
+
+.what-we-do__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 27px 108px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3%;
+  color: white;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do__desc {
+  padding: 27px 95px;
+}

@@ -1,0 +1,82 @@
+.our-team {
+    padding: 94px 0;
+    background-color: #f5f4fa;
+  }
+  
+  .our-team-wrap__item {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .figure__figcaption {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .our-team-header{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 116%;
+    color: #000;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  .figure__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 117%;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  
+  .figure__dsc {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 117%;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+  
+  .figure__img {
+    width: 270px;
+    height: 260px;
+  }
+
+  .our-team-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .figure {
+    background-color: #fff;
+  }
+  
+  .figure__icon-list {
+    margin-top: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-list__link {
+    text-decoration: none;
+  }
+  
+  .icon-list__icon {
+    color: $light;
+    font-size: 16px;
+    padding: 12px;
+    background-color: none;
+    transition: color 0.5s ease, background-color 250ms ease;
+    border-radius: 35px;
+
+    &:hover {
+        color: white;
+        background-color: $primary;;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+      }
+  }

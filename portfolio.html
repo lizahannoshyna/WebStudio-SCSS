@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="css/normilize.css">
+  <link rel="stylesheet" href="icons/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>portfolio</title>
+</head>
+
+<body>
+  <!--шапка-->
+  <header class="header">
+    <div class="container">
+      <img class="header__logo" src="webstudioimg/logo.png" alt="logo" />
+      <nav class="nav">
+        <a class="nav__item nav__item--active" href="index.html">Студія</a>
+        <a class="nav__item nav__item--active" href="portfolio.html">Портфоліо</a>
+        <a class="nav__item nav__item--active" id="header-nav-third-element" href="#">Контакти</a>
+        <a class="nav__item nav__contact" href="mailto:info@devstudio.com">
+          <i class="icon-envelope-hover"></i>info@devstudio.com</a>
+        <a class="nav__item nav__contact" href="tel:+3800961111111">
+          <i class="icon-smartphone"></i> +380 096 111 11 11</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!--кнопки-->
+    <section class="button">
+      <div class="container">
+        <button class="button__item animate__animated animate__zoomIn" id="unique-button" type="button">Усі</button>
+        <button class="button__item animate__animated animate__zoomIn" type="button">Веб-сайти</button>
+        <button class="button__item animate__animated animate__zoomIn" type="button">Додатки</button>
+        <button class="button__item animate__animated animate__zoomIn" type="button">Дизайн</button>
+        <button class="button__item animate__animated animate__zoomIn" type="button">Маркетинг</button>
+      </div>
+    </section>
+    <!--галерея-->
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__container">
+          <ul class="gallery__list animate__animated animate__fadeIn">
+            <li class="gallery__item">
+              <article class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/img.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Технокряк</h3>
+                  <p class="gallery__subtitle">Веб-сайт</p>
+                </figcaption>
+              </article>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/gs.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="gallery__subtitle">Дизайн</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/sea.food.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Технокряк</h3>
+                  <p class="gallery__subtitle">Додаток</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/headphones.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Проєкт Prime</h3>
+                  <p class="gallery__subtitle">Маркетинг</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/box.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Проєкт Boxes</h3>
+                  <p class="gallery__subtitle">Додаток</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/inspiration.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Inspiration has no Borders</h3>
+                  <p class="gallery__subtitle">Веб-сайт</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/book.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Видання Limited Edition</h3>
+                  <p class="gallery__subtitle">Дизайн</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/lab.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Проєкт LAB</h3>
+                  <p class="gallery__subtitle">Маркетинг</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__card">
+                <div class="gallery__thumb">
+                  <img class="gallery__img" src="imgp/business.png" alt="img" />
+                  <div class="gallery__overlay">
+                    <p class="gallery__overlay-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div>
+                <figcaption class="gallery__caption">
+                  <h3 class="gallery__title">Growing Business</h3>
+                  <p class="gallery__subtitle">Додаток</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--підвал-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__section footer__section--left">
+          <img class="footer__logo" src="webstudioimg/logo2.0.png" alt="logo" />
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" id="unique-element" href="#">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+3800961111111">+380 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section footer__section--right">
+          <h4 class="footer__header">ПРИЄДНУЙТЕСЬ</h4>
+          <ul class="footer__social">
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-instagram footer__social-icon"></i></a>
+            </li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-twitter footer__social-icon"></i></a>
+            </li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-facebook footer__social-icon"></i></a>
+            </li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-linkedin footer__social-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section footer__section--form">
+          <h4 class="footer__header--form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h4>
+          <form class="footer__form">
+            <label>
+              <input class="footer__input" type="email" name="email" placeholder="E-mail" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            </label>
+            <button class="footer__submit-btn" type="submit">
+              <p>Підписатися</p><img src="icons/icon-send-telegram.svg" alt="icon">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

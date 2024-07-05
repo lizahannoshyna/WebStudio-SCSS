@@ -1,0 +1,50 @@
+.benefits {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 170%;
+    padding: 94px 0;
+    flex-wrap: wrap;
+  
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+
+  .benefits__item{
+    width: 270px;
+  }
+
+  .benefits__header {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    line-height: 114%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .benefits__item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+  }
+
+  .benefits__item--attention::before {
+    background-image: url("../webstudioimg/icon1.svg");
+  }
+  
+  .benefits__item--punctuality::before {
+    background-image: url("../webstudioimg/icon2.svg");
+  }
+  
+  .benefits__item--plan::before {
+    background-image: url("../webstudioimg/icon3.svg");
+  }
+  
+  .benefits__item--technology::before {
+    background-image: url("../webstudioimg/icon4.svg");
+  }

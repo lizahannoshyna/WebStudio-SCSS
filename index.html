@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="css/normilize.css">
+  <link rel="stylesheet" href="icons/style.css">
+  <link rel="stylesheet" href="webstudioimg/fonts/icomoon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>WEBSTUDIO</title>
+</head>
+
+<body>
+  <!--хедер-->
+  <header class="header">
+    <div class="container">
+      <img class="header__logo" src="webstudioimg/logo.png" alt="logo" />
+      <nav class="nav">
+        <a class="nav__item nav__item--active" href="index.html">Студія</a>
+        <a class="nav__item nav__item--active" href="portfolio.html">Портфоліо</a>
+        <a class="nav__item nav__item--active" id="header-nav-third-element" href="#">Контакти</a>
+        <a class="nav__item nav__contact" href="mailto:info@devstudio.com">
+          <i class="icon-envelope-hover"></i>info@devstudio.com</a>
+        <a class="nav__item nav__contact" href="tel:+3800961111111">
+          <i class="icon-smartphone"></i> +380 096 111 11 11</a>
+      </nav>
+    </div>
+  </header>
+  <!--меін-->
+  <main>
+    <!--1 секція-->
+    <section class="main-page">
+      <div class="container">
+        <div class="main-page__elements">
+          <h1 class="main-page__header">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          ​<button class="main-page__btn animate__animated animate__fadeInUp" type="submit"
+            data-modal-open>Замовити послугу</button>
+          <!--форма-->
+          <div class="backdrop is-hidden is-visible" data-modal>
+            <div class="modal">
+              <button class="modal__close-btn" data-modal-close>&#215;</button>
+              <form action="" class="form">
+                <h1 class="form__title">Залиште свої дані, ми вам передзвонимо</h1>
+                <label class="form__label">
+                  <p class="form__label-header">Ім'я</p>
+                  <div class="form__input-container form__input-container--name">
+                    <input class="form__input form__input--name" type="text" name="name" required
+                      pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ']{2,30}$" title="Username must be two words separated by space.">
+                  </div>
+                </label>
+                <label class="form__label">
+                  <p class="form__label-header">Телефон</p>
+                  <div class="form__input-container form__input-container--phone">
+                    <input class="form__input form__input--phone" type="tel" name="tel" required pattern="\+380\d{9}">
+                  </div>
+                </label>
+                <label class="form__label">
+                  <p class="form__label-header">Пошта</p>
+                  <div class="form__input-container form__input-container--email">
+                    <input class="form__input form__input--email" type="email" name="email" required
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                  </div>
+                </label>
+                <label class="form__label">
+                  <p class="form__label-header">Коментарі</p>
+                  <textarea class="form__input form__textarea" name="message" cols="30" rows="10"
+                    placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="form__label form__label--checkbox" for="agreeCheckbox">
+                  <input type="checkbox" id="agreeCheckbox" required>
+                  Погоджуюся з розсилкою та приймаю <a href="#" class="form__checkbox-link">Умови договору</a>
+                </label>
+                <button class="form__submit-btn" type="submit">Відправити</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!--2 секція-->
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__item benefits__item--attention animate__animated animate__fadeIn">
+          <h5 class="benefits__header">УВАГА ДО ДЕТАЛЕЙ</h5>
+          <p class="benefits__desc">Ідейні міркування,і навіть початок повсякденної роботи з формування позиції.</p>
+        </div>
+        <div class="benefits__item benefits__item--punctuality animate__animated animate__fadeIn">
+          <h5 class="benefits__header">ПУНКТУАЛЬНІСТЬ</h5>
+          <p class="benefits__desc">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+        </div>
+        <div class="benefits__item benefits__item--plan animate__animated animate__fadeIn">
+          <h5 class="benefits__header">ПЛАНУВАННЯ</h5>
+          <p class="benefits__desc">Так само консультація з широким активом значною мірою зумовлює.</p>
+        </div>
+        <div class="benefits__item benefits__item--technology animate__animated animate__fadeIn">
+          <h5 class="benefits__header">СУЧАСНІ ТЕХНОЛОГІЇ</h5>
+          <p class="benefits__desc">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+        </div>
+      </div>
+    </section>
+    <!--3 секція-->
+    <section class="what-we-do">
+      <div class="container">
+        <h2 class="what-we-do__header animate__animated animate__slideInDown">Чим ми займаємось</h2>
+        <div class="what-we-do__wrap">
+          <div class="what-we-do__thumb">
+            <img class="what-we-do__img" src="webstudioimg/box_1.jpg" alt="box_1" />
+            <p class="what-we-do__desc animate__animated animate__fadeIn">ДЕСКТОПНІ ДОДАТКИ</p>
+          </div>
+          <div class="what-we-do__thumb">
+            <img class="what-we-do__img" src="webstudioimg/box_2.jpg" alt="box_2" />
+            <p class="what-we-do__desc animate__animated animate__fadeIn">МОБІЛЬНІ ДОДАТКИ</p>
+          </div>
+          <div class="what-we-do__thumb">
+            <img class="what-we-do__img" src="webstudioimg/box_3.jpg" alt="box_3" />
+            <p class="what-we-do__desc animate__animated animate__fadeIn">ДИЗАЙНЕРСЬКі РІШЕННЯ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--4 секція-->
+    <section class="our-team">
+      <div class="container">
+        <h2 class="our-team-header animate__animated animate__slideInDown">Наша команда</h2>
+        <div class="our-team-wrap animate__animated animate__fadeIn">
+          <div class="our-team-wrap__item">
+            <figure class="figure">
+              <img class="figure__img" src="webstudioimg/ihor_demyanenko.jpg" alt="Ihor Demyanenko.Product Designer
+              " width="300" />
+              <figcaption class="figure__figcaption">
+                <h6 class="figure__title">Ігор Дем'яненко</h6>
+                <p class="figure__dsc">Product Designer</p>
+                <ul class="figure__icon-list">
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-instagram icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-twitter icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href=" #"><i class="icon-facebook icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-linkedin icon-list__icon"></i></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="our-team-wrap__item">
+            <figure class="figure">
+              <img class="figure__img" src="webstudioimg/olga_repina.jpg" alt="Olga Repina.Frontend Developer
+              " width="300" />
+              <figcaption class="figure__figcaption">
+                <h6 class="figure__title">Ольга Рєпіна</h6>
+                <p class="figure__dsc">Frontend Developer</p>
+                <ul class="figure__icon-list">
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-instagram icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-twitter icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href=" #"><i class="icon-facebook icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-linkedin icon-list__icon"></i></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="our-team-wrap__item">
+            <figure class="figure">
+              <img class="figure__img" src="webstudioimg/mykola_tarasov.jpg" alt="Mykola Tarasov.Marketing
+              " width="300" />
+              <figcaption class="figure__figcaption">
+                <h6 class="figure__title">Микола Тарасенко</h6>
+                <p class="figure__dsc">Product Designer</p>
+                <ul class="figure__icon-list">
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-instagram icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-twitter icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href=" #"><i class="icon-facebook icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-linkedin icon-list__icon"></i></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </div><div class="our-team-wrap__item">
+            <figure class="figure">
+              <img class="figure__img" src="webstudioimg/mykhailo_yermakov.jpg" alt="Mykhailo Yermakov.UI Designer
+              " width="300" />
+              <figcaption class="figure__figcaption">
+                <h6 class="figure__title">Михайло Єрмаков</h6>
+                <p class="figure__dsc">Product Designer</p>
+                <ul class="figure__icon-list">
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-instagram icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-twitter icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href=" #"><i class="icon-facebook icon-list__icon"></i></a>
+                  </li>
+                  <li class="figure__icon-item"><a class="icon-list__link" href="#"><i class="icon-linkedin icon-list__icon"></i></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--постійні клієнти-->
+  <section class="regular-customers">
+    <div class="container">
+      <h2 class="regular-customers__header animate__animated animate__slideInDown">Постійні клієнти</h2>
+      <ul class="regular-customers__list animate__animated animate__fadeIn">
+        <li class="regular-customers__item"><a href="#" class="regular-customers__link"><i class="icon-Logo1 regular-customers__icon"></i></a>
+        </li>
+        <li class="regular-customers__item"><a href="#" class="regular-customers__link"><i class="icon-Logo2 regular-customers__icon"></i></a>
+        </li>
+        <li class="regular-customers__item"><a href="#" class="regular-customers__link"><i class="icon-Logo3 regular-customers__icon"></i></a>
+        </li>
+        <li class="regular-customers__item"><a href="#" class="regular-customers__link"><i class="icon-Logo4 regular-customers__icon"></i></a>
+        </li>
+        <li class="regular-customers__item"><a href="#" class="regular-customers__link"><i class="icon-Logo5 regular-customers__icon"></i></a>
+        </li>
+        <li class="regular-customers__item"><a href="#" class="regular-customers__link"><i class="icon-Logo6 regular-customers__icon"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--футер-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__section footer__section--left">
+          <img class="footer__logo" src="webstudioimg/logo2.0.png" alt="logo" />
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" id="unique-element" href="#">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+3800961111111">+380 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section footer__section--right">
+          <h4 class="footer__header">ПРИЄДНУЙТЕСЬ</h4>
+          <ul class="footer__social">
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-instagram footer__social-icon"></i></a>
+            </li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-twitter footer__social-icon"></i></a>
+            </li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-facebook footer__social-icon"></i></a>
+            </li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><i class="icon-linkedin footer__social-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section footer__section--form">
+          <h4 class="footer__header--form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h4>
+          <form class="footer__form">
+            <label>
+              <input class="footer__input" type="email" name="email" placeholder="E-mail" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            </label>
+            <button class="footer__submit-btn" type="submit">
+              <p>Підписатися</p><img src="icons/icon-send-telegram.svg" alt="icon">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
