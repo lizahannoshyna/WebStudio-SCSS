@@ -58,18 +58,7 @@
 }
 
 .main-page__btn {
-  background-color: $primary;
-  color: #fff;
-  padding: 10px 32px;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  line-height: 187%;
-  border: none;
-  border-radius: 4px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: color 250ms ease;
+  @include button-styles($primary, 32px, 10px, 1.5px);
 
   &:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);

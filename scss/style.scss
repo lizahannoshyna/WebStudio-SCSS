@@ -14,7 +14,10 @@ body {
   padding: 0px 15px;
 }
 
+// untills
 @import "./untills/variables";
+@import "./untills/mixins";
+@import "./untills/placeholders";
 
 // main page webstudio
 @import "./main-page-components/header";
@@ -31,3 +34,7 @@ body {
 @import "./portfolio-components/btn";
 @import "./portfolio-components/gallery";
 @import "./portfolio-components/footer";
+
+// adaptive layout
+@import "./adaptive-layaut/main-page";
+@import "./adaptive-layaut/portfolio-page";
