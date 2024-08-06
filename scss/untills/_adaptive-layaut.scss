@@ -1,0 +1,262 @@
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  //MAIN PAGE
+
+  //modal
+
+  .form__input {
+    margin-bottom: 0;
+  }
+
+  .form__input-container--name input[type="text"],
+  .form__input-container--phone input[type="tel"],
+  .form__input-container--email input[type="email"] {
+    padding-left: 32px;
+  }
+
+  .form {
+    width: 370px;
+  }
+
+  .form__label--checkbox {
+    display: block;
+  }
+
+  // benefits
+  .benefits {
+    justify-content: center;
+
+    .benefits__item {
+      width: 340px;
+      border: 1px solid #eeeeee;
+      box-sizing: border-box;
+    }
+  }
+
+  //what we do
+  .what-we-do__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .what-we-do__thumb {
+      flex-basis: calc((100% - 20px) / 2);
+    }
+
+    .what-we-do__img {
+      height: auto;
+    }
+  }
+
+  // our team
+  .our-team-wrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .our-team-wrap__item {
+      flex-basis: calc((100% - 20px) / 2);
+      box-sizing: border-box;
+
+      .figure__img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // regular-customers
+  .regular-customers__list {
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .regular-customers__item:nth-last-child(-n + 3) {
+      margin-top: 35px;
+    }
+
+    .regular-customers__icon {
+      padding: 16px 60px;
+    }
+  }
+
+  //footer
+
+  .footer__wrap {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  //footer__sectiion-left
+  .footer__section--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  //footer__sectiion-right
+  .footer__section--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  //footer__section--form
+  .footer__section--form {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-right: 166px;
+
+    .footer__header--form {
+      text-align: center;
+    }
+
+    .footer__form {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__section--form--item {
+      flex-basis: calc((100% - 20px) / 2);
+    }
+  }
+
+  // PORTFOLIO
+
+  //gallery
+  .gallery__card {
+    flex: 1 1 calc((100% - 20px) / 2);
+    justify-content: flex-start;
+  }
+}
+
+/* Small: 0px - 480px */
+@media (max-width: 480px) {
+  .container {
+    width: 450px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  //MAIN PAGE
+  //main-page
+  .main-page {
+    background-position-x: center;
+
+    .main-page__header {
+      width: 360px;
+      font-size: 26px;
+    }
+  }
+
+  //modal
+  .form__label--checkbox {
+    display: block;
+  }
+
+  .form {
+    width: 370px;
+  }
+
+  //benefits
+  .benefits__item {
+    width: 450px;
+    height: auto;
+  }
+
+  //what-we-do
+  .what-we-do__header {
+    font-size: 28px;
+
+    .what-we-do__wrap {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .what-we-do__thumb {
+      display: block;
+      flex-basis: 100%;
+    }
+
+    .what-we-do__img {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  //our-team
+  .our-team {
+    display: block;
+    flex-direction: column;
+    /* Розміщує елементи в колонку */
+    justify-content: center;
+
+    .our-team-wrap__item {
+      flex-basis: 80%;
+    }
+  }
+
+  //regular-customers
+  .regular-customers__list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+    .regular-customers__item {
+      margin-top: 35px;
+    }
+
+    .regular-customers__icon {
+      font-size: 40px;
+      padding: 16px 50px;
+    }
+  }
+
+  //footer
+  .footer__wrap {
+    flex-direction: column;
+
+    .footer__section--right {
+      margin-left: 0;
+    }
+
+    .footer__section--form {
+      margin-right: 5px;
+    }
+  }
+
+  //PORTFOLIO
+}
