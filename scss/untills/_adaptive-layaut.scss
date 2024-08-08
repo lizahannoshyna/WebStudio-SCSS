@@ -151,9 +151,19 @@
   // PORTFOLIO
 
   //gallery
-  .gallery__card {
-    flex: 1 1 calc((100% - 20px) / 2);
-    justify-content: flex-start;
+  .gallery__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .gallery__item {
+    flex-basis: calc((100% - 20px) / 2);
+    box-sizing: border-box;
+  }
+  .gallery__img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -259,4 +269,23 @@
   }
 
   //PORTFOLIO
+  //button
+.button{
+  .container {
+    display: flex;
+    justify-content: flex-start; /* Вирівнювання елементів по лівому краю */
+  }
+}
+  //gallery
+  .gallery__list{
+    display: block;
+    flex-direction: column;
+    /* Розміщує елементи в колонку */
+    justify-content: center;
+
+    .gallery__item {
+      padding-top: 20px;
+      flex-basis: 80%;
+    }
+  }
 }

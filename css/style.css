@@ -743,9 +743,6 @@ body {
 .button {
   padding-top: 94px;
 }
-.button:not(:last-child) {
-  margin-right: 8px;
-}
 .button .container {
   text-align: center;
 }
@@ -1103,9 +1100,19 @@ body {
   .footer__section--form .footer__section--form--item {
     flex-basis: calc((100% - 20px) / 2);
   }
-  .gallery__card {
-    flex: 1 1 calc((100% - 20px) / 2);
-    justify-content: flex-start;
+  .gallery__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .gallery__item {
+    flex-basis: calc((100% - 20px) / 2);
+    box-sizing: border-box;
+  }
+  .gallery__img {
+    width: 100%;
+    height: auto;
   }
 }
 /* Small: 0px - 480px */
@@ -1182,5 +1189,19 @@ body {
   }
   .footer__wrap .footer__section--form {
     margin-right: 5px;
+  }
+  .button .container {
+    display: flex;
+    justify-content: flex-start; /* Вирівнювання елементів по лівому краю */
+  }
+  .gallery__list {
+    display: block;
+    flex-direction: column;
+    /* Розміщує елементи в колонку */
+    justify-content: center;
+  }
+  .gallery__list .gallery__item {
+    padding-top: 20px;
+    flex-basis: 80%;
   }
 }
