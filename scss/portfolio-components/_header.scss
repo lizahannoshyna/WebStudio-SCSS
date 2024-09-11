@@ -24,9 +24,16 @@
     }
 
     &:hover {
-      @extend %hover;
+      color: $primary;
+      text-decoration: none;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+}
+
+.nav-menu{
+  list-style: none;
+  display: flex;
 }
 
 .nav__item {
@@ -53,14 +60,40 @@
   }
 }
 
+.nav__item-big{
+  margin-right: 30px;
+}
+
+.tel-and-mail{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 #header-nav-third-element {
-  margin-right: 314px;
+  margin-right: 300px;
 }
 
 .icon-envelope-hover {
-  margin: 2px 10px 2px 0;
-}
+    margin: 2px 10px 2px 0;
+  }
+  
+  .icon-smartphone {
+    margin-right: 10px;
+    margin-left: 30px;
+  }
 
-.icon-smartphone {
-  margin-right: 10px;
+  /*menu*/
+  .nav_menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .toggle{
+    z-index: 6;
+  }
+  input[type="checkbox"],
+label {
+  display: none;
 }

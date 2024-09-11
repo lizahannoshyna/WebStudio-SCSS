@@ -12,6 +12,20 @@
   .container {
     max-width: 960px;
   }
+  .tel-and-mail{
+    display: block;
+  }
+  #header-nav-third-element {
+    margin-right: 300px;
+  }
+  .icon-smartphone {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .nav-menu{
+    align-items: center;
+  }
+  //PORTFOLIO
   .gallery__list{
     justify-content: space-between;
   }
@@ -30,8 +44,6 @@
   }
 }
 
-
-
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
   .container {
@@ -46,6 +58,16 @@
   }
 
   //MAIN PAGE
+//header
+.tel-and-mail{
+  display: block;
+}
+#header-nav-third-element {
+  margin-right: 100px;
+}
+.nav-menu{
+  align-items: center;
+}
 
   //modal
 

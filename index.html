@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="icons/style.css">
   <link rel="stylesheet" href="webstudioimg/fonts/icomoon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="js/mobile-munu.js">
+  <link rel="stylesheet" href="js/main.js">
   <link rel="stylesheet" href="css/style.css" />
   <title>WEBSTUDIO</title>
 </head>
@@ -25,13 +25,23 @@
     <div class="container">
       <img class="header__logo" src="webstudioimg/logo.png" alt="logo" />
       <nav class="nav">
-        <a class="nav__item nav__item--active" href="index.html">Студія</a>
-        <a class="nav__item nav__item--active" href="portfolio.html">Портфоліо</a>
-        <a class="nav__item nav__item--active" id="header-nav-third-element" href="#">Контакти</a>
-        <a class="nav__item nav__contact" href="mailto:info@devstudio.com">
-          <i class="icon-envelope-hover"></i>info@devstudio.com</a>
-        <a class="nav__item nav__contact" href="tel:+3800961111111">
-          <i class="icon-smartphone"></i> +380 096 111 11 11</a>
+       <div class="nav-wrap">
+        <input class="nav-input" type="checkbox" id="toggle">
+                    <label class="toggle" for="toggle">
+                        <span></span>
+                    </label>
+        <ul class="nav-menu">
+          <li class="nav-link"> <a class="nav__item nav__item--active nav__item-big" id="studia" href="index.html">Студія</a></li>
+          <li class="nav-link"><a class="nav__item nav__item--active nav__item-big" href="portfolio.html">Портфоліо</a></li>
+          <li class="nav-link"><a class="nav__item nav__item--active nav__item-big nav-item-contacts" id="header-nav-third-element" href="#">Контакти</a></li>
+          <ul class="tel-and-mail">
+          <li class="nav-link" id="email-link"> <a class="nav__item nav__contact tel-and-mail-item email"  href="mailto:info@devstudio.com">
+            <i class="icon-envelope-hover"></i>info@devstudio.com</a></li>
+          <li class="nav-link"><a class="nav__item nav__contact tel-and-mail-item phone" href="tel:+3800961111111">
+            <i class="icon-smartphone"></i> +380 096 111 11 11</a></li>
+          </ul>
+          </ul>
+       </div>
       </nav>
     </div>
   </header>
@@ -76,8 +86,9 @@
                     placeholder="Введіть текст"></textarea>
                 </label>
                 <label class="form__label form__label--checkbox" for="agreeCheckbox">
-                  <input class="checkbox-input" type="checkbox" id="agreeCheckbox" required>Погоджуюся з розсилкою та приймаю
-                   <a href="#" class="form__checkbox-link">Умови договору</a>
+                  <input class="checkbox-input" type="checkbox" id="agreeCheckbox" required>Погоджуюся з розсилкою та
+                  приймаю
+                  <a href="#" class="form__checkbox-link">Умови договору</a>
                 </label>
                 <button class="form__submit-btn" type="submit">Відправити</button>
               </form>
@@ -301,7 +312,7 @@
           </ul>
         </div>
         <div class="footer__section footer__section--form">
-            <h4 class="footer__header--form  footer__section--form--item">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h4>
+          <h4 class="footer__header--form  footer__section--form--item">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h4>
           <form class="footer__form footer__section--form--item">
             <label>
               <input class="footer__input" type="email" name="email" placeholder="E-mail" required

@@ -15,7 +15,7 @@ body {
   padding: 0px 15px;
 }
 
-.nav .nav__item:hover, .footer__link:hover, #unique-element:hover, .modal__close-btn:hover {
+.footer__link:hover, #unique-element:hover, .modal__close-btn:hover {
   color: #2196f3;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -706,6 +706,17 @@ body {
 .nav .nav__item:not(:last-child) {
   margin-right: 30px;
 }
+.nav .nav__item:hover {
+  color: #2196f3;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
 .nav__item {
   color: #2196f3;
 }
@@ -728,8 +739,18 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav__item-big {
+  margin-right: 30px;
+}
+
+.tel-and-mail {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 #header-nav-third-element {
-  margin-right: 314px;
+  margin-right: 300px;
 }
 
 .icon-envelope-hover {
@@ -738,6 +759,24 @@ body {
 
 .icon-smartphone {
   margin-right: 10px;
+  margin-left: 30px;
+}
+
+/*menu*/
+.nav_menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  z-index: 6;
+}
+
+input[type=checkbox],
+label {
+  display: none;
 }
 
 .button {
@@ -1004,6 +1043,19 @@ body {
   .container {
     max-width: 960px;
   }
+  .tel-and-mail {
+    display: block;
+  }
+  #header-nav-third-element {
+    margin-right: 300px;
+  }
+  .icon-smartphone {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .nav-menu {
+    align-items: center;
+  }
   .gallery__list {
     justify-content: space-between;
   }
@@ -1032,6 +1084,15 @@ body {
     padding: 0;
     margin: 0 auto;
     justify-content: center;
+  }
+  .tel-and-mail {
+    display: block;
+  }
+  #header-nav-third-element {
+    margin-right: 100px;
+  }
+  .nav-menu {
+    align-items: center;
   }
   .form__input {
     margin-bottom: 0;
@@ -1258,5 +1319,111 @@ body {
     width: 290px;
     height: auto;
     margin-top: 30px;
+  }
+}
+/* mobile menu */
+@media (max-width: 768px) {
+  label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  label span {
+    top: 15px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type=checkbox]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .nav-menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    height: 100vh;
+    z-index: 5;
+    justify-content: left;
+    justify-content: start;
+    justify-self: start;
+    align-items: start;
+  }
+  .nav-menu li {
+    margin: 15px 0;
+  }
+  .nav__item-big {
+    font-size: 40px !important;
+    line-height: 117% !important;
+    font-weight: 500 !important;
+  }
+  .nav__item {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+  }
+  #header-nav-third-element {
+    margin-right: 0;
+  }
+  .nav-menu li .nav-link {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  .tel-and-mail {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 302px;
+  }
+  .tel-and-mail-item {
+    margin-left: 0;
+  }
+  .phone {
+    font-size: 34px !important;
+    color: #2196f3 !important;
+  }
+  .email {
+    font-size: 24px !important;
+    color: #757575 !important;
+    margin-right: 15px !important;
+  }
+  #studia {
+    color: #2196f3;
   }
 }

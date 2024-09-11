@@ -37,3 +37,112 @@ body {
 
 // adaptive layout
 @import "./untills/adaptive-layaut";
+
+/* mobile menu */
+@media (max-width: 768px) {
+  label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  label span {
+    top: 15px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: .3s;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .nav-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="checkbox"]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type="checkbox"]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type="checkbox"]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    height: 100vh;
+    z-index: 5;
+    justify-content: left;
+    justify-content: start;
+    justify-self: start;
+    align-items: start;
+  }
+  .nav-menu li {
+    margin: 15px 0;
+  }
+  .nav__item-big {
+    font-size: 40px !important;
+    line-height: 117% !important;
+    font-weight: 500 !important;
+  }
+  .nav__item{
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+  }
+  #header-nav-third-element{
+    margin-right: 0;
+  }
+  .nav-menu li .nav-link {
+    font-size: 40px;
+    margin-left: 40px;
+}
+.tel-and-mail{
+  display: flex;
+        flex-direction: column-reverse;
+        margin-top: 302px;
+}
+.tel-and-mail-item{
+  
+  margin-left: 0;
+}
+.phone{
+  font-size: 34px !important;
+  color: $primary !important;
+}
+.email{
+  font-size: 24px !important; 
+        color: #757575 !important;
+        margin-right: 15px !important;
+}
+#studia{
+  color: $primary;
+}
+}
