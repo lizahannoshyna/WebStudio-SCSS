@@ -14,8 +14,32 @@
   position: relative;
   width: 100%;
   background-image: url("../webstudioimg/bgheader.jpg");
-  background-image: url("../webstudioimg/bgheader.jpg") srcset "../webstudioimg/bgheader@2x.jpg" 2x;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('/img/img-portfolio/bg-mp/bg-mp-2x-mobile.png');
+    }
 
+    @media screen and (min-width: 768px) {
+        background-image: url("/img/img-portfolio/bg-mp/bg-mp-1x-tablet.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("/img/img-portfolio/bg-mp/bg-mp-2x-tablet.png");
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("/img/img-portfolio/bg-mp/bg-mp-1x-desktop.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("/img/img-portfolio/bg-mp/bg-mp-2x-desktop.png");
+        }
+    }
 
   &::before {
     content: "";
