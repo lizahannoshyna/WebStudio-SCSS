@@ -14,6 +14,8 @@
   position: relative;
   width: 100%;
   background-image: url("../webstudioimg/bgheader.jpg");
+  background-image: url("../webstudioimg/bgheader.jpg") srcset "../webstudioimg/bgheader@2x.jpg" 2x;
+
 
   &::before {
     content: "";
